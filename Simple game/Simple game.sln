@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple game.Plugins", "Simple game.Plugins.csproj", "{3235A131-899C-3D15-37E8-A404A96BB841}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple game", "Simple game.csproj", "{7C81346A-606A-4AC6-764F-26A979E5F8C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple game.Editor.Plugins", "Simple game.Editor.Plugins.csproj", "{0C9269DD-A75E-BBB1-8CBE-1B263D97F4BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3235A131-899C-3D15-37E8-A404A96BB841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3235A131-899C-3D15-37E8-A404A96BB841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3235A131-899C-3D15-37E8-A404A96BB841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3235A131-899C-3D15-37E8-A404A96BB841}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C81346A-606A-4AC6-764F-26A979E5F8C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C81346A-606A-4AC6-764F-26A979E5F8C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C81346A-606A-4AC6-764F-26A979E5F8C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C81346A-606A-4AC6-764F-26A979E5F8C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C9269DD-A75E-BBB1-8CBE-1B263D97F4BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C9269DD-A75E-BBB1-8CBE-1B263D97F4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C9269DD-A75E-BBB1-8CBE-1B263D97F4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C9269DD-A75E-BBB1-8CBE-1B263D97F4BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
