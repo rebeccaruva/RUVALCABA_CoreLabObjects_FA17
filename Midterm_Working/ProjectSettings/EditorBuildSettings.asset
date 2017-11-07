@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Fissure/Beginning_Fissure.unity
+    guid: ef4e6af94ee35794dad245694d91501e
+  - enabled: 1
+    path: Assets/Fissure/Midterm_Fissure.unity
+    guid: f4af7be3e2947f742a5d27ad00f97cfc
