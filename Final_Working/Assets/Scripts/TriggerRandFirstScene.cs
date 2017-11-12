@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class TriggerRandFirstScene : MonoBehaviour {
 
-    string[] sceneArray = { "FV Infinite", "FV Stairs", "FV Void" };
+    string[] sceneArray = { "FV Infinite", "FV Stairs" };
+    //, "FV Void"
 
     // Use this for initialization
     void Start () {
@@ -19,7 +20,9 @@ public class TriggerRandFirstScene : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        string sceneToRun = sceneArray[Random.Range(0, sceneArray.Length - 1)];
-        SceneManager.LoadScene(sceneToRun);
+        //string sceneToRun = sceneArray[Random.Range(0, sceneArray.Length - 1)];
+        //SceneManager.LoadScene(sceneToRun);
+
+        SceneManager.LoadScene("FV Infinite");
     }
 }

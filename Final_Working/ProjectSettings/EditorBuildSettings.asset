@@ -4,4 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/First House.unity
+    guid: f946132cc671b5245ab2cf0c3e70e3b6
+  - enabled: 1
+    path: Assets/FV Infinite.unity
+    guid: b8f6a5999bd626d48abc20b0eda4cfad
+  - enabled: 1
+    path: Assets/FV Stairs.unity
+    guid: a16741d2cfd48234c9d686e8a53f3090
+  - enabled: 1
+    path: Assets/FV Void.unity
+    guid: 95c535c15cbdec147ad1144ad2609988
