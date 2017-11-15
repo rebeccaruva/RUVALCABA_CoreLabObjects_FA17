@@ -4,29 +4,37 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour {
 
-    public float speed = 10f;
+    public float speed = 250f;
+    Rigidbody rb;
 
-	// Use this for initialization
-	void Start () {
+    Transform camPos;
+
+    // Use this for initialization
+    void Start()
+    {
         //turn off cursor so you don't see it in screen and locks it in game window
         Cursor.lockState = CursorLockMode.Locked;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        float translation = Input.GetAxis("Vertical") * speed;
-        float straffe = Input.GetAxis("Horizontal") * speed;
-        
+
+        rb = GetComponent<Rigidbody>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        float translation = Input.GetAxis("Vertical");
+        float straffe = Input.GetAxis("Horizontal");
+
         // keep movement smooth and in time with update
         translation *= Time.deltaTime;
         straffe *= Time.deltaTime;
-        
-        //push x and z axis
-        transform.Translate(straffe, 0, translation);
+
+        Vector3 movement = new Vector3(straffe, 0.0f, translation);
+
+        rb.velocity = (movement * speed);
 
         if (Input.GetKeyDown("escape"))
         {
             Cursor.lockState = CursorLockMode.None;
         }
-	}
+    }
 }

@@ -15,11 +15,11 @@ public class SphereGenerator : MonoBehaviour {
     void OnTriggerEnter(Collider other) {
         Transform SpherePrefab;
 
-        for (int i = 0; i < 12; i++)
+        for (int i = 0; i < 12; i++) //y
         {
-            for (int j = 0; j < 30; j++)
+            for (int j = 0; j < 25; j++) //x
             {
-                for (int k = 0; k < 22; k++)
+                for (int k = 0; k < 22; k++) //z
                 {
                     //5% large sphere -- [3]
                     //45% small sphere -- [1]
@@ -43,7 +43,7 @@ public class SphereGenerator : MonoBehaviour {
                         SpherePrefab = TinySpherePrefabArray[Random.Range(0, 4)];
                     }
 
-                    Vector3 posxy = new Vector3(j - 15, 48 + i, k - 10);
+                    Vector3 posxy = new Vector3(j - 12, 48 + i, k - 10);
                     Instantiate(SpherePrefab, posxy, Quaternion.identity);
 
                     TotalSphereCount++;

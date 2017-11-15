@@ -1007,6 +1007,7 @@ GameObject:
   - component: {fileID: 1200944462}
   - component: {fileID: 1200944461}
   - component: {fileID: 1200944460}
+  - component: {fileID: 1200944466}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1109,6 +1110,18 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
+--- !u!65 &1200944466
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1200944458}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1278132310
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,7 +1330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3690bc6da15d71143b4f93d73060d7a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1885396592948134, guid: cab7a16496d267f4a9435ed54eda5315, type: 2}
+  bullet: {fileID: 1821159323168896, guid: 49344ab627e08c04dac88d44848cf652, type: 2}
   PosReference: {fileID: 1200944459}
 --- !u!82 &1299439585
 AudioSource:
