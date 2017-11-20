@@ -325,7 +325,7 @@ GameObject:
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82a70c5dd8576aa478cbb35b3f3a49c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 250
+  speed: 100
 --- !u!54 &218636722
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1428,7 +1428,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1594380726}
   m_LocalRotation: {x: 0.50000006, y: 0.50000006, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0.6, z: -22.7}
+  m_LocalPosition: {x: 0, y: 0, z: -22.7}
   m_LocalScale: {x: 1.0000005, y: 15.899977, z: 31.562595}
   m_Children: []
   m_Father: {fileID: 47816386}

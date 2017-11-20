@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour {
 
-    public float speed = 250f;
+    public float speed = .250f;
     Rigidbody rb;
 
     Transform camPos;
@@ -29,8 +29,11 @@ public class CharacterController : MonoBehaviour {
         straffe *= Time.deltaTime;
 
         Vector3 movement = new Vector3(straffe, 0.0f, translation);
-
-        rb.velocity = (movement * speed);
+        if (movement.magnitude > 0) {
+            movement = transform.TransformDirection(movement);
+            rb.velocity = movement * speed;
+            //rb.velocity = Vector3.RotateTowards(rb.velocity, transform.forward, transform.rotation.y * Mathf.Deg2Rad, speed);
+            }
 
         if (Input.GetKeyDown("escape"))
         {
