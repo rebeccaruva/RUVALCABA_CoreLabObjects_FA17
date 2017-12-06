@@ -17,7 +17,7 @@ public class SamiMove : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //Moves Forward and back along z axis (up/down)
         //transform.Translate(Vector3.up * Time.deltaTime * Input.GetAxis("Vertical") * moveSpeed);

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour {
 
-    public float speed = .250f;
+    public float speed = 100f;
     Rigidbody rb;
 
     Transform camPos;
@@ -38,6 +38,11 @@ public class CharacterController : MonoBehaviour {
         if (Input.GetKeyDown("escape"))
         {
             Cursor.lockState = CursorLockMode.None;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            rb.AddForce(0, 250, 0);
         }
     }
 }
