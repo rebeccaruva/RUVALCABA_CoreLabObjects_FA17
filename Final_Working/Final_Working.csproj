@@ -126,6 +126,7 @@
     <Compile Include="Assets\Scripts\animateSami.cs" />
     <Compile Include="Assets\Scripts\AnimateStair.cs" />
     <Compile Include="Assets\Scripts\BackHomeTrigger.cs" />
+    <Compile Include="Assets\Scripts\BlockyHouse.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\BulletForce.cs" />
     <Compile Include="Assets\Scripts\CamMouseLook.cs" />
@@ -134,6 +135,7 @@
     <Compile Include="Assets\Scripts\InfiniteSceneTrigger.cs" />
     <Compile Include="Assets\Scripts\ReflecctProbeController.cs" />
     <Compile Include="Assets\Scripts\SamiMove.cs" />
+    <Compile Include="Assets\Scripts\SpaceBarEffects.cs" />
     <Compile Include="Assets\Scripts\SphereGenerator.cs" />
     <Compile Include="Assets\Scripts\StairHitColor.cs" />
     <Compile Include="Assets\Scripts\TriggerRandFirstScene.cs" />

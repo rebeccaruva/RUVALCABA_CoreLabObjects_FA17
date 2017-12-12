@@ -20,7 +20,10 @@ public class BackHomeTrigger : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene("First House");
+        if (other.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene("First House");
+        }
     }
 }
 

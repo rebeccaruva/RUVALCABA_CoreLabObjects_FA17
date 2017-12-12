@@ -6,6 +6,7 @@ public class CharacterController : MonoBehaviour {
 
     public float speed = 100f;
     Rigidbody rb;
+    int jumpCounter = 0;
 
     Transform camPos;
 
@@ -40,9 +41,14 @@ public class CharacterController : MonoBehaviour {
             Cursor.lockState = CursorLockMode.None;
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (((Input.GetKeyDown(KeyCode.Space)) && (jumpCounter <= 1)) || ((Input.GetKeyDown(KeyCode.Space)) && (jumpCounter <= 1) && (translation > 0)) || ((Input.GetKeyDown(KeyCode.Space)) && (jumpCounter <= 1) && (straffe > 0)))
         {
             rb.AddForce(0, 250, 0);
+            jumpCounter++;
+            if (jumpCounter >= 1)
+            {
+                jumpCounter = 0;
+            }
         }
     }
 }
