@@ -6,8 +6,9 @@ public class CamMouseLook : MonoBehaviour {
 
     Vector2 mouseLook;
     Vector2 smoothV;
-    public float sensitivity = 5.0f;
+    public float sensitivity = 1.0f;
     public float smoothing = 2.0f;
+    float rotX, rotY;
 
     GameObject character;
 
@@ -25,7 +26,24 @@ public class CamMouseLook : MonoBehaviour {
         smoothV.y = Mathf.Lerp(smoothV.y, md.y, 1f / smoothing);
         mouseLook += smoothV;
 
-        transform.localRotation = Quaternion.AngleAxis(-mouseLook.y, Vector3.right);
-        character.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, character.transform.up);
+        rotX = mouseLook.x;
+        rotY = mouseLook.y;
+
+        //Debug.Log("before: " + rotY);
+        //Mathf.Clamp(rotY, -5, 5);
+        //Debug.Log("after: " + rotY);
+
+        if (rotY <= -75f)
+        {
+            rotY = -75f;
+        }
+        else if (rotY >= 75f)
+        {
+            rotY = 75f;
+        }
+
+        transform.localRotation = Quaternion.AngleAxis(-rotY, Vector3.right);
+        character.transform.localRotation = Quaternion.AngleAxis(rotX, character.transform.up);
+
     }
 }

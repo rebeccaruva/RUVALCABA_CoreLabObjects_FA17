@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 23090993720182314}
   - component: {fileID: 54139839627450240}
   - component: {fileID: 114149420649008204}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TinySphereBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

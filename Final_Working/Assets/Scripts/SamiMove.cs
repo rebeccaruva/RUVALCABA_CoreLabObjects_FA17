@@ -6,7 +6,7 @@ public class SamiMove : MonoBehaviour {
 
     //public float moveSpeed = 10f;
 
-    public float speed = 10f;
+    public float speed = 16f;
 
     private Rigidbody rb;
 

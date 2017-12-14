@@ -50,5 +50,10 @@ public class CharacterController : MonoBehaviour {
                 jumpCounter = 0;
             }
         }
+
+        if ((Input.GetKeyDown(KeyCode.LeftShift)) || (Input.GetKeyDown(KeyCode.RightShift)))
+        {
+            speed *= 1.5f;
+        }
     }
 }
