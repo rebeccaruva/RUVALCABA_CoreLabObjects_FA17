@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Title.unity
+    guid: a94264563e96c8e4682ec6b91659af7d
+  - enabled: 1
     path: Assets/First House.unity
     guid: f946132cc671b5245ab2cf0c3e70e3b6
   - enabled: 1
@@ -14,9 +17,3 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FV Stairs.unity
     guid: a16741d2cfd48234c9d686e8a53f3090
-  - enabled: 1
-    path: Assets/FV Void.unity
-    guid: 95c535c15cbdec147ad1144ad2609988
-  - enabled: 1
-    path: Assets/Block House.unity
-    guid: d7fcd85a56166cb45aa3613239a4b48a

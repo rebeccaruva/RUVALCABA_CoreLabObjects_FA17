@@ -8,9 +8,9 @@ public class SphereGenerator : MonoBehaviour {
 
     int hitCount = 0;
 
-    public GameObject currentGO;
-    public GameObject GO1;
-    public GameObject GO2;
+    //public GameObject currentGO;
+    //public GameObject GO1;
+   // public GameObject GO2;
     public GameObject block;
 
     public Transform[] TinySpherePrefabArray;
@@ -22,11 +22,11 @@ public class SphereGenerator : MonoBehaviour {
     void OnTriggerEnter(Collider other) {
         if ((other.gameObject.name == "TinySphereBullet(Clone)") && (hitCount < 1))
         {
-            currentGO.SetActive(true);
+            //currentGO.SetActive(true);
             Transform SpherePrefab;
-            GO1.SetActive(false);
-            GO2.SetActive(false);
-            block.SetActive(false);
+            //GO1.SetActive(false);
+            //GO2.SetActive(false);
+           block.SetActive(false);
 
             for (int i = 0; i < 12; i++) //y
             {

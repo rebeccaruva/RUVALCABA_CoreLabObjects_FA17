@@ -9,9 +9,9 @@ public class TriangleGenerator : MonoBehaviour
 
     int hitCount = 0;
 
-    public GameObject currentGO;
-    public GameObject GO1;
-    public GameObject GO2;
+    //public GameObject currentGO;
+   // public GameObject GO1;
+   // public GameObject GO2;
     public GameObject block;
 
     public Transform[] TinyTrianglePrefabArray;
@@ -24,10 +24,10 @@ public class TriangleGenerator : MonoBehaviour
     {
         if ((other.gameObject.name == "TinySphereBullet(Clone)") && (hitCount < 1))
         {
-            currentGO.SetActive(true);
+           // currentGO.SetActive(true);
             Transform TrianglePrefab;
-            GO1.SetActive(false);
-            GO2.SetActive(false);
+          //  GO1.SetActive(false);
+          //  GO2.SetActive(false);
             block.SetActive(false);
 
             for (int i = 0; i < 12; i++) //y

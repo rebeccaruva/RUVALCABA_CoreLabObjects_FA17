@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/FV Infinite.unity
+- path: Assets/FV Stairs.unity
   isLoaded: 1
   isActive: 1

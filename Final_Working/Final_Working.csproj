@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>WebGL:20</UnityBuildTarget>
     <UnityVersion>2017.1.0f3</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -140,7 +138,9 @@
     <Compile Include="Assets\Scripts\HitLight.cs" />
     <Compile Include="Assets\Scripts\Honk.cs" />
     <Compile Include="Assets\Scripts\InfiniteSceneTrigger.cs" />
+    <Compile Include="Assets\Scripts\InstantiateRandTarget.cs" />
     <Compile Include="Assets\Scripts\MakeActive.cs" />
+    <Compile Include="Assets\Scripts\MenuStart.cs" />
     <Compile Include="Assets\Scripts\ReflecctProbeController.cs" />
     <Compile Include="Assets\Scripts\SamiMove.cs" />
     <Compile Include="Assets\Scripts\SpaceBarEffects.cs" />
